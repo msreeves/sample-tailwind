@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/build/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Merriweather&display=swap"
+      rel="stylesheet"
+    />
+    <title>Tailwind Demo</title>
+  </head>
+
+  <body class="font-body">
+    <header>
+      <div class="border-b border-indigo-darkest py-4 px-2">
+        <div class="container mx-auto">
+          <nav class="flex items-center justify-between flex-wrap p-3">
+            <div class="flex items-center flex-shrink-0 text-white mr-6">
+              <svg
+                class="fill-current h-8 w-8 mr-2"
+                width="54"
+                height="54"
+                viewBox="0 0 54 54"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z"
+                />
+              </svg>
+              <span class="font-semibold text-xl tracking-tight"
+                >Tailwind CSS</span
+              >
+            </div>
+
+            <label
+              class="block lg:hidden cursor-pointer flex items-center px-3 py-2 border rounded text-black-200 border-black-400"
+              for="menu-toggle"
+              ><svg
+                class="fill-current h-3 w-3"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>Menu</title>
+                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" /></svg
+            ></label>
+            <input class="hidden" type="checkbox" id="menu-toggle" />
+
+            <div
+              class="hidden w-full block flex-grow lg:flex lg:items-center lg:w-auto"
+              id="menu"
+            >
+              <div class="text-center lg:text-right text-sm lg:flex-grow">
+                <a
+                  href="#responsive-header"
+                  class="block p-2 mt-4 lg:inline-block lg:mt-0 text-black-200 hover:bg-black hover:text-white mr-4"
+                >
+                  Docs
+                </a>
+                <a
+                  href="#responsive-header"
+                  class="block p-2 mt-4 lg:inline-block lg:mt-0 text-black-200 hover:bg-black hover:text-white mr-4"
+                >
+                  Examples
+                </a>
+                <a
+                  href="#responsive-header"
+                  class="block p-2 mt-4 lg:inline-block lg:mt-0 text-black-200 hover:bg-black hover:text-white"
+                >
+                  Blog
+                </a>
+                <a
+                href="#"
+                class="inline-block border-black text-sm px-2 py-2 leading-none border text-black hover:text-white hover:bg-black mt-4 lg:mt-0"
+                >Download</a
+              </div>
+              
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <section
+      style="background-image: url('./images/paw-print-941499_1920.png');"
+      class="py-20"
+    >
+      <div class="container mx-auto">
+        <div class="w-full">
+          <div
+            class="md:flex bg-white rounded-lg overflow-hidden shadow relative"
+          >
+            <img
+              class="w-full md:w-1/2 object-cover object-center"
+              src="https://i.picsum.photos/id/162/1500/998.jpg"
+              alt=""
+            />
+            <div class="p-4 h-auto">
+              <div class="w-2/3 mb-3 ml-3">
+                <h1>
+                  <a
+                    href="#"
+                    class="block relative mb-3 inline px-8 bg-black text-white hover:bg-red-700 font-semibold text-lg md:text-base lg:text-3xl inline-block"
+                  >
+                    CNN's Jim Acosta, Chris Cuomo criticized President Trump for
+                    tying coronavirus to China — but video mash-up highlights
+                    their hypocrisy
+                  </a>
+                </h1>
+              </div>
+              <div
+                class="text-gray-600 text-sm leading-relaxed block mb-8 md:text-xs lg:text-sm"
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+                quidem blanditiis unde asperiores? Officia amet perspiciatis ad
+                quibusdam incidunt eaque, nobis, eveniet neque porro id commodi
+                quisquam debitis!
+              </div>
+              <div
+                class="relative mt-3 lg:absolute bottom-0 mb-4 md:hidden lg:block"
+              >
+                <a
+                  class="inline p-2 bg-black py-1 px-2 text-xs lowercase text-white"
+                  href="#"
+                  >#something</a
+                >
+                <a
+                  class="inline p-2 bg-black py-1 px-2 text-xs lowercase text-white"
+                  href="#"
+                  >#sky</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="block md:flex justify-between mt-10 md:-mx-2">
+          <div class="w-full lg:w-1/3 md:mx-2 mb-4 md:mb-0">
+            <div class="bg-white rounded-lg overflow-hidden shadow relative">
+              <img
+                class="h-56 w-full object-cover object-center"
+                src="https://i.picsum.photos/id/103/2592/1936.jpg"
+                alt=""
+              />
+              <div class="p-4 h-auto md:h-64">
+                <h2>
+                  <a
+                    href="#"
+                    class="block text-black-500 hover:text-black-600 font-semibold mb-2 text-lg md:text-base lg:text-lg"
+                  >
+                    Woman standing under black sky
+                  </a>
+                </h2>
+                <div
+                  class="text-gray-600 text-sm leading-relaxed block md:text-xs lg:text-sm"
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+                  quidem blanditiis unde asperiores? Officia amet perspiciatis
+                  ad quibusdam incidunt eaque, nobis, eveniet neque porro id
+                  commodi quisquam debitis!
+                </div>
+                <div
+                  class="relative mt-3 lg:absolute bottom-0 mb-4 md:hidden lg:block"
+                >
+                  <a
+                    class="inline  py-1 px-2 rounded-full text-xs lowercase text-gray-700"
+                    href="#"
+                    >#something</a
+                  >
+                  <a
+                    class="inline  py-1 px-2 rounded-full text-xs lowercase text-gray-700"
+                    href="#"
+                    >#sky</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full lg:w-1/3 md:mx-2 mb-4 md:mb-0">
+            <div class="bg-white rounded-lg overflow-hidden shadow relative">
+              <img
+                class="h-56 w-full object-cover object-center"
+                src="https://i.picsum.photos/id/111/4400/2656.jpg"
+                alt=""
+              />
+              <div class="p-4 h-auto md:h-64">
+                <h2>
+                  <a
+                    href="#"
+                    class="block text-black-500 hover:text-black-600 font-semibold mb-2 text-lg md:text-base lg:text-lg"
+                  >
+                    Woman walking on pathway
+                  </a>
+                </h2>
+                <div
+                  class="text-gray-600 text-sm leading-relaxed block md:text-xs lg:text-sm"
+                >
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure
+                  aut quia alias ullam eveniet sunt! Ipsa, sunt. Inventore ipsum
+                  sit quasi. Alias quasi officiis blanditiis!
+                </div>
+                <div
+                  class="relative mt-3 lg:absolute bottom-0 mb-4 md:hidden lg:block"
+                >
+                  <a
+                    class="inline  py-1 px-2 rounded-full text-xs lowercase text-gray-700"
+                    href="#"
+                    >#pathway</a
+                  >
+                  <a
+                    class="inline  py-1 px-2 rounded-full text-xs lowercase text-gray-700"
+                    href="#"
+                    >#woman</a
+                  >
+                  <a
+                    class="inline  py-1 px-2 rounded-full text-xs lowercase text-gray-700"
+                    href="#"
+                    >#walkalone</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full lg:w-1/3 md:mx-2 mb-4 md:mb-0">
+            <div class="bg-white rounded-lg overflow-hidden shadow relative">
+              <img
+                class="h-56 w-full object-cover object-center"
+                src="https://i.picsum.photos/id/163/2000/1333.jpg"
+                alt=""
+              />
+              <div class="p-4 h-auto md:h-64">
+                <h2>
+                  <a
+                    href="#"
+                    class="block text-black-500 hover:text-black-600 font-semibold mb-2 text-lg md:text-base lg:text-lg"
+                  >
+                    Walking through a forest in the afternoon
+                  </a>
+                </h2>
+                <div
+                  class="text-gray-600 text-sm leading-relaxed block md:text-xs lg:text-sm"
+                >
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Commodi nemo magni saepe cumque error quia quae sint ducimus,
+                  maiores doloremque.
+                </div>
+                <div
+                  class="relative mt-3 lg:absolute bottom-0 mb-4 md:hidden lg:block"
+                >
+                  <a
+                    class="inline  py-1 px-2 rounded-full text-xs lowercase text-gray-700"
+                    href="#"
+                    >#forest</a
+                  >
+                  <a
+                    class="inline  py-1 px-2 rounded-full text-xs lowercase text-gray-700"
+                    href="#"
+                    >#walk</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="pt-20 pb-48">
+      <div class="container mx-auto px-4">
+        <h1 class="lg:text-3xl mb-8 font-bold">Features</h1>
+        <div class="w-full">
+          <div
+            class="flex flex-row bg-white rounded-lg overflow-hidden shadow relative"
+          >
+            <img
+              class="h-32 md:h-64 object-cover object-center"
+              src="https://i.picsum.photos/id/1005/5760/3840.jpg"
+              alt=""
+            />
+            <div class="p-4 h-auto md:h-64">
+              <h2>
+                <a
+                  href="#"
+                  class="block text-black-500 hover:text-black-600 font-semibold mb-2 text-lg md:text-base lg:text-lg"
+                >
+                  Woman standing under black sky
+                </a>
+              </h2>
+              <div
+                class="hidden md:block text-gray-600 text-sm leading-relaxed block md:text-xs lg:text-sm"
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+                quidem blanditiis unde asperiores? Officia amet perspiciatis ad
+                quibusdam incidunt eaque, nobis, eveniet neque porro id commodi
+                quisquam debitis!
+              </div>
+              <div
+                class="relative mt-3 lg:absolute bottom-0 mb-4 md:hidden lg:block"
+              >
+                <a
+                  class="inline  py-1 px-2 rounded-full text-xs lowercase text-gray-700"
+                  href="#"
+                  >#something</a
+                >
+                <a
+                  class="inline  py-1 px-2 rounded-full text-xs lowercase text-gray-700"
+                  href="#"
+                  >#sky</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="block md:flex justify-between mt-10 md:-mx-2">
+          <div class="w-full lg:w-1/3 md:mx-2 mb-4 md:mb-0">
+            <div class="bg-white rounded-lg overflow-hidden shadow relative">
+              <img
+                class="h-56 w-full object-cover object-center"
+                src="https://images.unsplash.com/photo-1457282367193-e3b79e38f207?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1654&amp;q=80"
+                alt=""
+              />
+              <div class="p-4 h-auto md:h-64">
+                <h2>
+                  <a
+                    href="#"
+                    class="block text-black-500 hover:text-black-600 font-semibold mb-2 text-lg md:text-base lg:text-lg"
+                  >
+                    Woman standing under black sky
+                  </a>
+                </h2>
+                <div
+                  class="text-gray-600 text-sm leading-relaxed block md:text-xs lg:text-sm"
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+                  quidem blanditiis unde asperiores? Officia amet perspiciatis
+                  ad quibusdam incidunt eaque, nobis, eveniet neque porro id
+                  commodi quisquam debitis!
+                </div>
+                <div
+                  class="relative mt-3 lg:absolute bottom-0 mb-4 md:hidden lg:block"
+                >
+                  <a
+                    class="inline  py-1 px-2 rounded-full text-xs lowercase text-gray-700"
+                    href="#"
+                    >#something</a
+                  >
+                  <a
+                    class="inline  py-1 px-2 rounded-full text-xs lowercase text-gray-700"
+                    href="#"
+                    >#sky</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full lg:w-1/3 md:mx-2 mb-4 md:mb-0">
+            <div class="bg-white rounded-lg overflow-hidden shadow relative">
+              <img
+                class="h-56 w-full object-cover object-center"
+                src="https://images.unsplash.com/photo-1465188162913-8fb5709d6d57?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60"
+                alt=""
+              />
+              <div class="p-4 h-auto md:h-64">
+                <h2>
+                  <a
+                    href="#"
+                    class="block text-black-500 hover:text-black-600 font-semibold mb-2 text-lg md:text-base lg:text-lg"
+                  >
+                    Woman walking on pathway
+                  </a>
+                </h2>
+                <div
+                  class="text-gray-600 text-sm leading-relaxed block md:text-xs lg:text-sm"
+                >
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure
+                  aut quia alias ullam eveniet sunt! Ipsa, sunt. Inventore ipsum
+                  sit quasi. Alias quasi officiis blanditiis!
+                </div>
+                <div
+                  class="relative mt-3 lg:absolute bottom-0 mb-4 md:hidden lg:block"
+                >
+                  <a
+                    class="inline  py-1 px-2 rounded-full text-xs lowercase text-gray-700"
+                    href="#"
+                    >#pathway</a
+                  >
+                  <a
+                    class="inline  py-1 px-2 rounded-full text-xs lowercase text-gray-700"
+                    href="#"
+                    >#woman</a
+                  >
+                  <a
+                    class="inline  py-1 px-2 rounded-full text-xs lowercase text-gray-700"
+                    href="#"
+                    >#walkalone</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full lg:w-1/3 md:mx-2 mb-4 md:mb-0">
+            <div class="bg-white rounded-lg overflow-hidden shadow relative">
+              <img
+                class="h-56 w-full object-cover object-center"
+                src="https://images.unsplash.com/photo-1467238307002-480ffdd260f2?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60"
+                alt=""
+              />
+              <div class="p-4 h-auto md:h-64">
+                <h2>
+                  <a
+                    href="#"
+                    class="block text-black-500 hover:text-black-600 font-semibold mb-2 text-lg md:text-base lg:text-lg"
+                  >
+                    Walking through a forest in the afternoon
+                  </a>
+                </h2>
+                <div
+                  class="text-gray-600 text-sm leading-relaxed block md:text-xs lg:text-sm"
+                >
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Commodi nemo magni saepe cumque error quia quae sint ducimus,
+                  maiores doloremque.
+                </div>
+                <div
+                  class="relative mt-3 lg:absolute bottom-0 mb-4 md:hidden lg:block"
+                >
+                  <a
+                    class="inline  py-1 px-2 rounded-full text-xs lowercase text-gray-700"
+                    href="#"
+                    >#forest</a
+                  >
+                  <a
+                    class="inline  py-1 px-2 rounded-full text-xs lowercase text-gray-700"
+                    href="#"
+                    >#walk</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="pb-20 relative block bg-gray-900">
+      <div
+        class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+        style="height: 80px; transform: translateZ(0px);"
+      >
+        <svg
+          class="absolute bottom-0 overflow-hidden"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          version="1.1"
+          viewBox="0 0 2560 100"
+          x="0"
+          y="0"
+        >
+          <polygon
+            class="text-gray-900 fill-current"
+            points="2560 0 2560 100 0 100"
+          ></polygon>
+        </svg>
+      </div>
+      <div class="container mx-auto px-4 lg:pt-24 lg:pb-64">
+        <div class="flex flex-wrap text-center justify-center">
+          <div class="w-full lg:w-6/12 p-4">
+            <h2 class="text-4xl font-semibold text-white">Build something</h2>
+            <p class="text-lg leading-relaxed mt-4 mb-4 text-gray-500">
+              Put the potentially record low maximum sea ice extent tihs year
+              down to low ice. According to the National Oceanic and Atmospheric
+              Administration, Ted, Scambos.
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-wrap my-12 justify-center">
+          <div class="w-full md:w-3/12 px-4 text-center">
+            <div
+              class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center"
+            >
+              <i class="fas fa-medal text-xl"></i>
+            </div>
+            <h6 class="text-xl mt-5 font-semibold text-white">
+              Excelent Services
+            </h6>
+            <p class="mt-2 mb-4 text-gray-500">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+          <div class="w-full md:w-3/12 px-4 text-center">
+            <div
+              class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center"
+            >
+              <i class="fas fa-poll text-xl"></i>
+            </div>
+            <h5 class="text-xl mt-5 font-semibold text-white">
+              Grow your market
+            </h5>
+            <p class="mt-2 mb-4 text-gray-500">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+          <div class="w-full md:w-3/12 px-4 text-center">
+            <div
+              class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center"
+            >
+              <i class="fas fa-lightbulb text-xl"></i>
+            </div>
+            <h5 class="text-xl mt-5 font-semibold text-white">Launch time</h5>
+            <p class="mt-2 mb-4 text-gray-500">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="relative block py-24 lg:pt-0 bg-gray-900">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-wrap justify-center lg:-mt-64 -mt-48">
+          <div class="w-full lg:w-6/12 px-4">
+            <div
+              class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg "
+            >
+              <div class="flex-auto p-5 lg:p-10">
+                <h4 class="text-white text-2xl font-semibold">
+                  Want to work with us?
+                </h4>
+                <p class="leading-relaxed mt-1 mb-4 text-gray-600">
+                  Complete this form and we will get back to you in 24 hours.
+                </p>
+                <div class="relative w-full mb-3 mt-8">
+                  <label
+                    class="block uppercase text-gray-700 text-xs font-bold mb-2"
+                    for="full-name"
+                    >Full Name</label
+                  ><input
+                    type="text"
+                    class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
+                    placeholder="Full Name"
+                    style="transition: all 0.15s ease 0s;"
+                  />
+                </div>
+                <div class="relative w-full mb-3">
+                  <label
+                    class="block uppercase text-gray-700 text-xs font-bold mb-2"
+                    for="email"
+                    >Email</label
+                  ><input
+                    type="email"
+                    class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
+                    placeholder="Email"
+                    style="transition: all 0.15s ease 0s;"
+                  />
+                </div>
+                <div class="relative w-full mb-3">
+                  <label
+                    class="block uppercase text-gray-700 text-xs font-bold mb-2"
+                    for="message"
+                    >Message</label
+                  ><textarea
+                    rows="4"
+                    cols="80"
+                    class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
+                    placeholder="Type a message..."
+                  ></textarea>
+                </div>
+                <div class="text-center mt-6">
+                  <button
+                    class="border border-white hover:border-blue-600 hover:bg-blue-600 bg-gray-900 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
+                    type="button"
+                    style="transition: all 0.15s ease 0s;"
+                  >
+                    Send Message
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-20">
+      <div class="container mx-auto px-4">
+        <div class="container mx-auto">
+          <div class="w-full">
+            <div
+              class="flex flex-row bg-white rounded-lg overflow-hidden shadow relative"
+            >
+              <img
+                class="w-1/4 h-32 md:h-64 object-cover object-center"
+                src="https://i.picsum.photos/id/1005/5760/3840.jpg"
+                alt=""
+              />
+              <div class="p-4 h-full">
+                <h2>
+                  <a
+                    href="#"
+                    class="block text-black-500 hover:text-black-600 font-semibold mb-2 text-lg md:text-base lg:text-lg"
+                  >
+                    Woman standing under black sky
+                  </a>
+                </h2>
+                <div
+                  class="hidden md:block text-gray-600 text-sm leading-relaxed block md:text-xs lg:text-sm"
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+                  quidem blanditiis unde asperiores? Officia amet perspiciatis
+                  ad quibusdam incidunt eaque, nobis, eveniet neque porro id
+                  commodi quisquam debitis!
+                </div>
+                <div
+                  class="relative mt-3 lg:absolute bottom-0 mb-4 md:hidden lg:block"
+                >
+                  <a
+                    class="inline  py-1 px-2 rounded-full text-xs lowercase text-gray-700"
+                    href="#"
+                    >#something</a
+                  >
+                  <a
+                    class="inline  py-1 px-2 rounded-full text-xs lowercase text-gray-700"
+                    href="#"
+                    >#sky</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="block md:flex justify-between mt-10 md:-mx-2">
+            <div class="w-full lg:w-1/3 md:mx-2 mb-4 md:mb-0">
+              <div class="bg-white rounded-lg overflow-hidden shadow relative">
+                <img
+                  class="h-56 w-full object-cover object-center"
+                  src="https://images.unsplash.com/photo-1457282367193-e3b79e38f207?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1654&amp;q=80"
+                  alt=""
+                />
+                <div class="p-4 h-64">
+                  <h2>
+                    <a
+                      href="#"
+                      class="block text-black-500 hover:text-black-600 font-semibold mb-2 text-lg md:text-base lg:text-lg"
+                    >
+                      Woman standing under black sky
+                    </a>
+                  </h2>
+                  <div
+                    class="text-gray-600 text-sm leading-relaxed block md:text-xs lg:text-sm"
+                  >
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+                    quidem blanditiis unde asperiores? Officia amet perspiciatis
+                    ad quibusdam incidunt eaque, nobis, eveniet neque porro id
+                    commodi quisquam debitis!
+                  </div>
+                  <div
+                    class="relative mt-3 lg:absolute bottom-0 mb-4 md:hidden lg:block"
+                  >
+                    <a
+                      class="inline  py-1 px-2 rounded-full text-xs lowercase text-gray-700"
+                      href="#"
+                      >#something</a
+                    >
+                    <a
+                      class="inline  py-1 px-2 rounded-full text-xs lowercase text-gray-700"
+                      href="#"
+                      >#sky</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-full lg:w-1/3 md:mx-2 mb-4 md:mb-0">
+              <div class="bg-white rounded-lg overflow-hidden shadow relative">
+                <img
+                  class="h-56 w-full object-cover object-center"
+                  src="https://images.unsplash.com/photo-1465188162913-8fb5709d6d57?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60"
+                  alt=""
+                />
+                <div class="p-4 h-auto md:h-64">
+                  <h2>
+                    <a
+                      href="#"
+                      class="block text-black-500 hover:text-black-600 font-semibold mb-2 text-lg md:text-base lg:text-lg"
+                    >
+                      Woman walking on pathway
+                    </a>
+                  </h2>
+                  <div
+                    class="text-gray-600 text-sm leading-relaxed block md:text-xs lg:text-sm"
+                  >
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Iure aut quia alias ullam eveniet sunt! Ipsa, sunt.
+                    Inventore ipsum sit quasi. Alias quasi officiis blanditiis!
+                  </div>
+                  <div
+                    class="relative mt-3 lg:absolute bottom-0 mb-4 md:hidden lg:block"
+                  >
+                    <a
+                      class="inline  py-1 px-2 rounded-full text-xs lowercase text-gray-700"
+                      href="#"
+                      >#pathway</a
+                    >
+                    <a
+                      class="inline  py-1 px-2 rounded-full text-xs lowercase text-gray-700"
+                      href="#"
+                      >#woman</a
+                    >
+                    <a
+                      class="inline  py-1 px-2 rounded-full text-xs lowercase text-gray-700"
+                      href="#"
+                      >#walkalone</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-full lg:w-1/3 md:mx-2 mb-4 md:mb-0">
+              <div class="bg-white rounded-lg overflow-hidden shadow relative">
+                <img
+                  class="h-56 w-full object-cover object-center"
+                  src="https://images.unsplash.com/photo-1467238307002-480ffdd260f2?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60"
+                  alt=""
+                />
+                <div class="p-4 h-auto md:h-64">
+                  <h2>
+                    <a
+                      href="#"
+                      class="block text-black-500 hover:text-black-600 font-semibold mb-2 text-lg md:text-base lg:text-lg"
+                    >
+                      Walking through a forest in the afternoon
+                    </a>
+                  </h2>
+                  <div
+                    class="text-gray-600 text-sm leading-relaxed block md:text-xs lg:text-sm"
+                  >
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Commodi nemo magni saepe cumque error quia quae sint
+                    ducimus, maiores doloremque.
+                  </div>
+                  <div
+                    class="relative mt-3 lg:absolute bottom-0 mb-4 md:hidden lg:block"
+                  >
+                    <a
+                      class="inline  py-1 px-2 rounded-full text-xs lowercase text-gray-700"
+                      href="#"
+                      >#forest</a
+                    >
+                    <a
+                      class="inline  py-1 px-2 rounded-full text-xs lowercase text-gray-700"
+                      href="#"
+                      >#walk</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="max-w-full md:max-w-6xl mx-auto my-3 md:px-8">
+        <div class="relative block flex flex-col md:flex-row items-center">
+          <div
+            class="w-11/12 max-w-sm sm:w-3/5 lg:w-1/3 sm:my-5 my-8 relative z-0 rounded-lg shadow-lg md:-mr-4 order-0"
+          >
+            <div
+              class="bg-white text-black rounded-lg shadow-inner shadow-lg overflow-hidden"
+            >
+              <div
+                class="block text-left text-sm sm:text-md max-w-sm mx-auto mt-2 text-black px-8 lg:px-6"
+              >
+                <h1
+                  class="text-lg font-medium uppercase p-3 pb-0 font-bold tracking-wide text-center"
+                >
+                  Hobby
+                </h1>
+                <h2 class="text-sm text-gray-500 text-center pb-6 text-center">FREE</h2>
+
+                Stripe offers everything needed to run an online business at
+                scale. Get in touch for details.
+              </div>
+
+              <div class="flex flex-wrap mt-3 px-6">
+                <ul>
+                  <li class="flex items-center">
+                    <div class=" rounded-full p-2 fill-current text-blue-700">
+                      <i class="fa fa-thumbs-up fa-2x"></i>
+                    </div>
+                    <span class="text-gray-700 text-lg ml-3">No setup</span>
+                  </li>
+                  <li class="flex items-center">
+                    <div class=" rounded-full p-2 fill-current text-blue-700">
+                      <i class="fa fa-thumbs-up fa-2x"></i>
+                    </div>
+                    <span class="text-gray-700 text-lg ml-3">No setups</span>
+                  </li>
+                  <li class="flex items-center">
+                    <div class=" rounded-full p-2 fill-current text-blue-700">
+                      <i class="fa fa-thumbs-up fa-2x"></i>
+                    </div>
+                    <span class="text-gray-700 text-lg ml-3">Speed</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="block flex items-center p-8  uppercase">
+                <button
+                  class="mt-3 text-lg font-semibold 
+      bg-black w-full text-white rounded-lg 
+      px-6 py-3 block shadow-xl hover:bg-gray-700"
+                >
+                  Select
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-full max-w-md sm:w-2/3 lg:w-1/3 sm:my-5 my-8 relative z-10 bg-white rounded-lg shadow-lg order-first md:order-1"
+          >
+            <div
+              class="text-sm leading-none rounded-t-lg bg-blue-700 text-white text-black font-semibold uppercase py-4 text-center tracking-wide"
+            >
+              Most Popular
+            </div>
+            <div
+              class="block text-left text-sm sm:text-md max-w-sm mx-auto mt-2 text-black px-8 lg:px-6"
+            >
+              <h1
+                class="text-lg font-medium uppercase p-3 pb-0 font-bold tracking-wide text-center"
+              >
+                Expert
+              </h1>
+              <h2 class="text-sm text-gray-500 text-center pb-6">
+                <span class="text-3xl">£19</span> /mo
+              </h2>
+
+              Stripe offers everything needed to run an online business at
+              scale. Get in touch for details.
+            </div>
+            <div class="flex pl-12 justify-start sm:justify-start mt-3">
+              <ul>
+                <li class="flex items-center">
+                  <div class=" rounded-full p-2 fill-current text-blue-700">
+                    <i class="fa fa-thumbs-up fa-2x"></i>
+                  </div>
+                  <span class="text-gray-700 text-lg ml-3">No setup</span>
+                </li>
+                <li class="flex items-center">
+                  <div class=" rounded-full p-2 fill-current text-blue-700">
+                    <i class="fa fa-thumbs-up fa-2x"></i>
+                  </div>
+                  <span class="text-gray-700 text-lg ml-3">Hidden fees</span>
+                </li>
+                <li class="flex items-center">
+                  <div class=" rounded-full p-2 fill-current text-blue-700">
+                    <i class="fa fa-thumbs-up fa-2x"></i>
+                  </div>
+                  <span class="text-gray-700 text-lg ml-3">Original</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="block flex items-center p-8  uppercase">
+              <button
+                class="mt-3 text-lg font-semibold 
+      bg-black w-full text-white rounded-lg 
+      px-6 py-3 block shadow-xl hover:bg-gray-700"
+              >
+                Select
+              </button>
+            </div>
+          </div>
+          <div
+            class="w-11/12 max-w-sm sm:w-3/5 lg:w-1/3 sm:my-5 my-8 relative z-0 rounded-lg shadow-lg md:-ml-4 order-2"
+          >
+            <div
+              class="bg-white text-black rounded-lg shadow-inner shadow-lg overflow-hidden"
+            >
+              <div
+                class="block text-left text-sm sm:text-md max-w-sm mx-auto mt-2 text-black px-8 lg:px-6"
+              >
+                <h1
+                  class="text-lg font-medium uppercase p-3 pb-0 font-bold tracking-wide text-center"
+                >
+                  Enteprise
+                </h1>
+                <h2 class="text-sm text-gray-500 text-center pb-6">£39 /mo</h2>
+
+                Stripe offers everything needed to run an online business at
+                scale. Get in touch for details.
+              </div>
+              <div class="flex flex-wrap mt-3 px-6">
+                <ul>
+                  <li class="flex items-center">
+                    <div class=" rounded-full p-2 fill-current text-blue-700">
+                      <i class="fa fa-thumbs-up fa-2x"></i>
+                    </div>
+                    <span class="text-gray-700 text-lg ml-3">Electric</span>
+                  </li>
+                  <li class="flex items-center">
+                    <div class=" rounded-full p-2 fill-current text-blue-700">
+                      <i class="fa fa-thumbs-up fa-2x"></i>
+                    </div>
+                    <span class="text-gray-700 text-lg ml-3">Monthly</span>
+                  </li>
+                  <li class="flex items-center">
+                    <div class=" rounded-full p-2 fill-current text-blue-700">
+                      <i class="fa fa-thumbs-up fa-2x"></i>
+                    </div>
+                    <span class="text-gray-700 text-lg ml-3">No setup</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="block flex items-center p-8  uppercase">
+                <button
+                  class="mt-3 text-lg font-semibold 
+      bg-black w-full text-white rounded-lg 
+      px-6 py-3 block shadow-xl hover:bg-gray-700"
+                >
+                  Select
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-20">
+      <div class="container mx-auto px-4">
+        <div class="w-full">
+          <div
+            class="flex flex-row bg-white rounded-lg overflow-hidden shadow relative"
+          >
+            <img
+              class="w-1/4 h-32 md:h-64 object-cover object-center"
+              src="https://i.picsum.photos/id/1005/5760/3840.jpg"
+              alt=""
+            />
+            <div class="p-4 h-auto md:h-64">
+              <h2>
+                <a
+                  href="#"
+                  class="block text-black-500 hover:text-black-600 font-semibold mb-2 text-lg md:text-base lg:text-lg"
+                >
+                  Woman standing under black sky
+                </a>
+              </h2>
+              <div
+                class="hidden md:block text-gray-600 text-sm leading-relaxed block md:text-xs lg:text-sm"
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+                quidem blanditiis unde asperiores? Officia amet perspiciatis ad
+                quibusdam incidunt eaque, nobis, eveniet neque porro id commodi
+                quisquam debitis!
+              </div>
+              <div
+                class="relative mt-3 lg:absolute bottom-0 mb-4 md:hidden lg:block"
+              >
+                <a
+                  class="inline  py-1 px-2 rounded-full text-xs lowercase text-gray-700"
+                  href="#"
+                  >#something</a
+                >
+                <a
+                  class="inline  py-1 px-2 rounded-full text-xs lowercase text-gray-700"
+                  href="#"
+                  >#sky</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="block md:flex justify-between mt-10 md:-mx-2">
+          <div class="w-full lg:w-1/2 md:mx-2 mb-4 md:mb-0">
+            <div class="bg-white rounded-lg overflow-hidden shadow relative">
+              <img
+                class="w-full object-cover object-center"
+                src="https://images.unsplash.com/photo-1457282367193-e3b79e38f207?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1654&amp;q=80"
+                alt=""
+              />
+              <div class="p-4 h-full">
+                <h2>
+                  <a
+                    href="#"
+                    class="block text-black-500 hover:text-black-600 font-semibold mb-2 text-lg md:text-base lg:text-lg"
+                  >
+                    Woman standing under black sky
+                  </a>
+                </h2>
+                <div
+                  class="text-gray-600 text-sm leading-relaxed block md:text-xs lg:text-sm"
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+                  quidem blanditiis unde asperiores? Officia amet perspiciatis
+                  ad quibusdam incidunt eaque, nobis, eveniet neque porro id
+                  commodi quisquam debitis!
+                </div>
+                <div class="relative mt-3 bottom-0 mb-4 md:hidden lg:block">
+                  <a
+                    class="inline  py-1 px-2 rounded-full text-xs lowercase text-gray-700"
+                    href="#"
+                    >#something</a
+                  >
+                  <a
+                    class="inline  py-1 px-2 rounded-full text-xs lowercase text-gray-700"
+                    href="#"
+                    >#sky</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full lg:w-1/2 md:mx-2 mb-4 md:mb-0">
+            <div
+              class="flex flex-row bg-white rounded-lg overflow-hidden shadow relative mb-8"
+            >
+              <img
+                class="h-full w-1/3 object-cover object-center"
+                src="https://images.unsplash.com/photo-1465188162913-8fb5709d6d57?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60"
+                alt=""
+              />
+              <div class="p-4 h-auto">
+                <h2>
+                  <a
+                    href="#"
+                    class="block text-black-500 hover:text-black-600 font-semibold mb-2 text-lg md:text-base"
+                  >
+                    Woman walking on pathway
+                  </a>
+                </h2>
+                <div class="relative mt-3 bottom-0 mb-4 hidden lg:block">
+                  <a
+                    class="inline  py-1 px-2 rounded-full text-xs lowercase text-gray-700"
+                    href="#"
+                    >#pathway</a
+                  >
+                  <a
+                    class="inline  py-1 px-2 rounded-full text-xs lowercase text-gray-700"
+                    href="#"
+                    >#woman</a
+                  >
+                  <a
+                    class="inline  py-1 px-2 rounded-full text-xs lowercase text-gray-700"
+                    href="#"
+                    >#walkalone</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex flex-row bg-white rounded-lg overflow-hidden shadow relative mb-8"
+            >
+              <img
+                class="h-full w-1/3 object-cover object-center"
+                src="https://images.unsplash.com/photo-1465188162913-8fb5709d6d57?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60"
+                alt=""
+              />
+              <div class="p-4 h-auto">
+                <h2>
+                  <a
+                    href="#"
+                    class="block text-black-500 hover:text-black-600 font-semibold mb-2 text-lg md:text-base lg:text-lg"
+                  >
+                    Woman walking on pathway
+                  </a>
+                </h2>
+                <div class="relative mt-3 bottom-0 mb-4 md:hidden lg:block">
+                  <a
+                    class="inline  py-1 px-2 rounded-full text-xs lowercase text-gray-700"
+                    href="#"
+                    >#pathway</a
+                  >
+                  <a
+                    class="inline  py-1 px-2 rounded-full text-xs lowercase text-gray-700"
+                    href="#"
+                    >#woman</a
+                  >
+                  <a
+                    class="inline  py-1 px-2 rounded-full text-xs lowercase text-gray-700"
+                    href="#"
+                    >#walkalone</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex flex-row bg-white rounded-lg overflow-hidden shadow relative mb-8"
+            >
+              <img
+                class="h-full w-1/3 object-cover object-center"
+                src="https://images.unsplash.com/photo-1467238307002-480ffdd260f2?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60"
+                alt=""
+              />
+              <div class="p-4 h-auto">
+                <h2>
+                  <a
+                    href="#"
+                    class="block text-black-500 hover:text-black-600 font-semibold mb-2 text-lg md:text-base lg:text-lg"
+                  >
+                    Walking through a forest in the afternoon
+                  </a>
+                </h2>
+                <div
+                  class="relative mt-3 lg:absolute bottom-0 mb-4 md:hidden lg:block"
+                >
+                  <a
+                    class="inline  py-1 px-2 rounded-full text-xs lowercase text-gray-700"
+                    href="#"
+                    >#forest</a
+                  >
+                  <a
+                    class="inline  py-1 px-2 rounded-full text-xs lowercase text-gray-700"
+                    href="#"
+                    >#walk</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex flex-row bg-white rounded-lg overflow-hidden shadow relative mb-8"
+            >
+              <img
+                class="h-full w-1/3 object-cover object-center"
+                src="https://images.unsplash.com/photo-1467238307002-480ffdd260f2?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60"
+                alt=""
+              />
+              <div class="p-4 h-auto">
+                <h2>
+                  <a
+                    href="#"
+                    class="block text-black-500 hover:text-black-600 font-semibold mb-2 text-lg md:text-base lg:text-lg"
+                  >
+                    Walking through a forest in the afternoon
+                  </a>
+                </h2>
+                <div
+                  class="relative mt-3 lg:absolute bottom-0 mb-4 md:hidden lg:block"
+                >
+                  <a
+                    class="inline  py-1 px-2 rounded-full text-xs lowercase text-gray-700"
+                    href="#"
+                    >#forest</a
+                  >
+                  <a
+                    class="inline  py-1 px-2 rounded-full text-xs lowercase text-gray-700"
+                    href="#"
+                    >#walk</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="pb-20">
+      <div class="container mx-auto">
+        <div class="block md:flex justify-between mt-10 md:-mx-2">
+          <div class="w-full md:mx-2 mb-4 md:mb-0">
+            <div class="card-icons text-right">
+              <i
+                class="fab fa-facebook-square text-blue-500 fa-5x card-icon"
+              ></i>
+              <i
+                class="fab fa-twitter-square text-orange-700 fa-5x card-icon"
+              ></i>
+              <i
+                class="fab fa-google-plus-square text-indigo-700 fa-5x card-icon"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
